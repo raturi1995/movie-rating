@@ -1,0 +1,32 @@
+/* modal style */
+.modal-container{
+    display: flex;
+    flex-flow: wrap;
+}
+.modal-image-section{
+    width: 40%;
+}
+.modal-description-section{
+    width: 60%;
+}
+
+.modal-poster-style{
+    width:90%
+}
+/* mobile css */
+@media only screen and (max-width: 600px) {
+    .modal-container{
+        display: flex;
+        flex-flow: wrap;
+        flex-direction: column;
+    }
+    .modal-image-section{
+        width: 100%;
+    }
+    .modal-description-section{
+        width: 100%;
+    }
+    .modal-poster-style{
+        width:80%;
+    }
+  }

@@ -1,0 +1,127 @@
+/* Search Bar css */
+
+.search-bar-style {
+
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.search-bar-wrapper {
+    margin: 10px;
+    padding: 5px;
+}
+
+/* See More Button css */
+.see-more-style {
+    width: 40%;
+    padding: 5px;
+    height: 40px;
+    background-color: #4a7094;
+    color: white;
+    cursor: pointer;
+    border-radius: 30px;
+    border-width: inherit;
+
+}
+
+/* movie list css */
+.poster-image-style {
+    height: 300px;
+    width: 100%;
+    min-width: 200px;
+    background-image: url(https://previews.123rf.com/images/pe3check/pe3check1710/pe3check171000054/88673746-no-image-available-sign-internet-web-icon-to-indicate-the-absence-of-image-until-it-will-be-download.jpg);
+}
+
+.list-item-wrapper {
+    padding: 10px;
+    cursor: pointer;
+    margin: 5px;
+    width: min-content;
+}
+
+.movie-title-style {
+    margin-left: -10px;
+    font-weight: bolder;
+}
+
+section {
+    width: 80%;
+
+}
+
+main {
+    display: flex;
+
+}
+
+.movie-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+aside {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.no_result-found-style {
+    height: 400px;
+}
+
+/* mobile css */
+@media only screen and (max-width: 500px) {
+    main {
+        display: flex;
+        flex-flow: column;
+    }
+
+    section {
+        width: 100%;
+    }
+
+    .poster-image-style {
+        height: 250px;
+        width: 200px;
+        background-image: url(https://previews.123rf.com/images/pe3check/pe3check1710/pe3check171000054/88673746-no-image-available-sign-internet-web-icon-to-indicate-the-absence-of-image-until-it-will-be-download.jpg);
+    }
+
+    .movie-list-container {
+        display: flex;
+        width: 100%;
+
+    }
+
+    .list-item-wrapper {
+        padding: 10px;
+        width: 100%;
+        cursor: pointer;
+        margin: 5px;
+        justify-content: center
+    }
+
+    aside {
+        width: 100%;
+
+    }
+}
+
+@media only screen and (max-width: 750px) and (min-width:501px) {
+    aside {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+
+    }
+
+    main {
+        display: flex;
+        flex-flow: column;
+    }
+}
